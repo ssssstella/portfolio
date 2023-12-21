@@ -52,7 +52,7 @@ export default function Skill() {
               <div className="skill--timeline--experiences">
                 <div className='skill--timeline--experience'>
                   <h5>Customer Engineer</h5>
-                  <p>XX Company</p>
+                  <p>Google Cloud Platform</p>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Skill() {
               <div className="skill--timeline--experiences">
                 <div className='skill--timeline--experience'>
                   <h5>Cloud Support Engineer</h5>
-                  <p>XX Company</p>
+                  <p>Amazon Web Services</p>
                 </div>
               </div>
             </div>
