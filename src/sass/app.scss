@@ -1,0 +1,60 @@
+$bg-color: #edf2f8;
+$purple: #313bac;
+$black: #030303;
+$lightgray: #e4e4e4;
+$gray: #6b7688;
+$brown: #46364a;
+$beige: #fef4f5;
+$white: #fff; 
+
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: $gray;
+    scroll-behavior: smooth;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+
+/* typography */
+h1 {
+    font-size: 2.5rem;
+    color: $black;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+strong {
+    color: $purple;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
+/* layout */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    // border: 1px solid blue;
+}

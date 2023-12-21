@@ -1,0 +1,81 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #6b7688;
+  scroll-behavior: smooth;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* typography */
+h1 {
+  font-size: 2.5rem;
+  color: #030303;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+strong {
+  color: #313bac;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+/* layout */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.dotnav {
+  position: fixed;
+  top: 40%;
+  right: 1rem;
+}
+
+.dotnav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.dotnav ul .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #a3aab6;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dotnav ul .dot li {
+  list-style-type: none;
+}
+
+.dotnav ul .dot:hover {
+  background-color: #313bac;
+}
+
+.dotnav ul .active-dot {
+  background-color: #313bac;
+}

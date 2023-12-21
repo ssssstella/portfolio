@@ -1,0 +1,72 @@
+@import "../../sass/app.scss";
+
+.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    padding: 120px 15% 70px 15%;
+
+    &--container {
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        .hero--desc {
+            align-self: flex-start;
+
+            &--box {
+                padding: 1rem 2rem;
+                background-color: $white;
+                border-radius: 1.25rem;
+                box-shadow: 0 0 20px rgba(0,0,0,.1);
+                margin-bottom: 50px;
+            }
+
+            &--box:first-child {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &--box:last-child {
+                p {
+                    font-weight: 500;
+                    margin-bottom: 0.3rem;
+                }
+                
+                
+            }
+        }
+
+        .hero--profile {
+            width: 50%;
+            height: 100%;
+            margin: 0 4% 0 2%;
+            object-fit: cover;
+            display: inline-block;
+            align-self: flex-end;
+        }
+
+        .hero--tech {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+
+            &--logo {
+                height: 80px;
+                width: 80px;
+                background-color: $white;
+                border-radius: 50%;
+                padding: 15px;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+   
+}

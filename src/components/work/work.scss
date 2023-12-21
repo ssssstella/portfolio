@@ -1,0 +1,135 @@
+@import "../../sass/app.scss";
+
+.work {
+    padding: 160px 0 80px 0;
+    background-color: $bg-color;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        .work--tags {
+            display: flex;
+            margin-bottom: 50px;
+
+            .work--tag {
+                background-color: $white;
+                border: none;
+                padding: 0.6rem 1rem;
+                border-radius: 5px;
+                margin: 1rem;
+                color: $black;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            .tag--active {
+                background-color: $purple;
+                color: $white;
+            }
+        }
+
+        .work--cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .work--card {
+                background-color: $white;
+                width: 348px;
+                padding: 1.5rem;
+                border-radius: 20px;
+                margin: 20px 30px;
+
+                &--img {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    position: relative;
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+
+                    &--mask {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, .5);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        opacity: 0;
+                        transition: 0.5s;
+
+                        &--logo {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            margin: 1.25rem;
+                            background-color: rgba(0, 0, 0, .55);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: $white;
+                            font-size: 1.8rem;
+                            transition: 0.5s;
+                        }
+
+                        &--logo:hover {
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+
+                &--img:hover {
+                    .work--card--img--mask {
+                        opacity: 1;
+                    }
+                } 
+
+                &--content {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &--title {
+                        color: $black;
+                        font-weight: 600;
+                        margin: 1rem 0;
+                    }
+
+                    &--text {
+                        align-self: flex-start;
+                    }
+
+                    &--tag {
+                        border-radius: 10px;
+                        position: absolute;
+                        top: -28px;
+                        padding: 10px 15px;
+                        background-color: $white;
+                    }
+                }
+
+            }
+
+            .work--card:hover {
+                box-shadow: 0 9px 48px -6px rgba(53, 64, 117, 0.12);
+            }
+        }
+    }
+}

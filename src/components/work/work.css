@@ -1,0 +1,177 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #6b7688;
+  scroll-behavior: smooth;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* typography */
+h1 {
+  font-size: 2.5rem;
+  color: #030303;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+strong {
+  color: #313bac;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+/* layout */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.work {
+  padding: 160px 0 80px 0;
+  background-color: #edf2f8;
+}
+
+.work .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work .container h1 {
+  margin-bottom: 50px;
+}
+
+.work .container .work--tags {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.work .container .work--tags .work--tag {
+  background-color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  margin: 1rem;
+  color: #030303;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.work .container .work--tags .tag--active {
+  background-color: #313bac;
+  color: #fff;
+}
+
+.work .container .work--cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work .container .work--cards .work--card {
+  background-color: #fff;
+  width: 348px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin: 20px 30px;
+}
+
+.work .container .work--cards .work--card--img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.work .container .work--cards .work--card--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work .container .work--cards .work--card--img--mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.work .container .work--cards .work--card--img--mask--logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.8rem;
+  transition: 0.5s;
+}
+
+.work .container .work--cards .work--card--img--mask--logo:hover {
+  transform: scale(0.9);
+}
+
+.work .container .work--cards .work--card--img:hover .work--card--img--mask {
+  opacity: 1;
+}
+
+.work .container .work--cards .work--card--content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work .container .work--cards .work--card--content--title {
+  color: #030303;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.work .container .work--cards .work--card--content--text {
+  align-self: flex-start;
+}
+
+.work .container .work--cards .work--card--content--tag {
+  border-radius: 10px;
+  position: absolute;
+  top: -28px;
+  padding: 10px 15px;
+  background-color: #fff;
+}
+
+.work .container .work--cards .work--card:hover {
+  box-shadow: 0 9px 48px -6px rgba(53, 64, 117, 0.12);
+}

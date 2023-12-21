@@ -1,0 +1,78 @@
+@import "../../sass/app.scss";
+
+.contact {
+    background-color: $bg-color;
+    padding: 160px 0 80px 0;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+
+        h1 {
+            text-align: center;
+        }
+
+        .contact--channelBox {
+            width: 400px;
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            background-color: $beige;
+
+            .contact--channel {
+                display: flex;
+                align-items: center;
+
+                img {
+                    display: inline-block;
+                    width: 50px;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    font-weight: 500;
+                }
+
+            }
+
+        }
+
+        .contact--form {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            input {
+                height: 50px;
+                padding-left: 1rem;
+            }
+
+            textarea {
+                padding: 1rem 0 0 1rem;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                border: none;
+                border-radius: 15px;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            button {
+                background-color: $purple;
+                color: $white;
+                border: none;
+                align-self: center;
+                padding: 1rem 2rem;
+                border-radius: 10px;
+                margin-top: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #6b7688;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* typography */
+h1 {
+  font-size: 2.5rem;
+  color: #030303;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+strong {
+  color: #313bac;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+/* layout */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.footer {
+  height: 100px;
+  background-color: #edf2f8;
+  padding: 1rem 3.5rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  color: #030303;
+}
+
+.footer--socials--logo {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.footer--socials--logo .logo_light {
+  display: none;
+}
+
+.footer--socials--logo img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+
+.footer--socials--logo:hover {
+  background-color: #313bac;
+}
+
+.footer--socials--logo:hover .logo_light {
+  display: block;
+}
+
+.footer--socials--logo:hover .logo_dark {
+  display: none;
+}

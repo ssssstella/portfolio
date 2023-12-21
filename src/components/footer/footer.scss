@@ -1,0 +1,51 @@
+@import "../../sass/app.scss";
+
+.footer {
+    height: 100px;
+    background-color: $bg-color;
+    padding: 1rem 3.5rem 1rem 1rem; 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: $black;
+    }
+    
+
+    &--socials {
+        &--logo {
+            height: 40px;
+            width: 40px;
+            border: 1px solid $lightgray;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+
+            .logo_light {
+                display: none;
+            }
+
+            img {
+                height: 20px;
+                width: 20px;
+                object-fit: cover;
+            }
+        }
+
+        &--logo:hover {
+            background-color: $purple;
+            .logo_light {
+                display: block;
+            }
+
+            .logo_dark {
+                display: none;
+            }
+
+        }
+    }
+}

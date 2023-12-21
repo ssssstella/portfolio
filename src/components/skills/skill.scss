@@ -1,0 +1,94 @@
+@import "../../sass/app.scss";
+
+.skill {
+    padding: 160px 0 80px 0;
+
+    .container {
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .skill--box {
+            display: flex;
+            justify-content: space-between;
+
+            .skill--icons {
+                width: 40%;
+                margin-right: 10%;
+                padding-left: 3%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+         
+
+                .skill--icon {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 1rem 1.25rem;
+
+                    div {
+                        height: 90px;
+                        width: 90px;
+                        background-color: $beige;
+                        border-radius: 50%;
+                        padding: 20px;
+                        margin-bottom: 0.5rem;
+
+                        img {
+                            height: 50px;
+                            width: 50px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    div:hover {
+                        box-shadow: 0 9px 48px -6px rgba(53, 64, 117, 0.12);
+                        transition: 0.5s;
+                    }
+
+                    p {
+                        font-weight: 500;
+                    }
+                }
+
+            
+            }
+
+            .skill--timeline {
+                width: 45%;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2rem;
+
+
+                &--box {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .skill--timeline--year {
+                        color: $purple;
+                        margin-right: 10%;
+                    }
+
+                    .skill--timeline--experiences {
+                    
+                        .skill--timeline--experience {
+                            margin-bottom: 1.25rem;
+                        }
+
+                        h5 {
+                            color: $black;
+                            font-weight: 500;
+                            margin-bottom: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
