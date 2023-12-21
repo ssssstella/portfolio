@@ -9,6 +9,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
   color: #6b7688;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -43,7 +44,6 @@ strong {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 
 .footer {

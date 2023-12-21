@@ -44,7 +44,6 @@ strong {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 
 .about {
@@ -70,6 +69,7 @@ strong {
 
 .about .container .about--cards .about--card {
   width: 250px;
+  margin-bottom: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
